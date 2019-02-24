@@ -5,10 +5,6 @@ import android.util.Log;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.mgfdev.elcaminodelacerveza.dao.ServiceDao;
-import com.mgfdev.elcaminodelacerveza.dto.User;
-
-import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Type;
 import java.util.Map;
@@ -18,7 +14,7 @@ import java.util.Map;
  */
 
 public class LoginModule {
-    private Context context;
+ /*   private Context context;
     private static User user;
 
     private static LoginModule instance ;
@@ -85,5 +81,5 @@ public class LoginModule {
     public boolean doLogout(Context ctx, User user){
         ServiceDao dao = new ServiceDao();
         return dao.doLogout(ctx, user);
-    }
+    }*/
 }

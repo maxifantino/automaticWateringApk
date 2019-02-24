@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal|center_vertical"
+    android:layout_gravity="center_horizontal|center_vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/landing_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mgfdev.autowaterapp.activity.LandingActivity"
+    tools:showIn="@layout/activity_landing">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/login_form"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/email_sign_in_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:textColor="@color/createAcountColor"
+            android:background="@drawable/create_account_background"
+            android:text="@string/create_account_btn"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/loginLinkTest"
+            style="@style/loginSignUpStyle"
+            android:text="@string/signup_message"/>
+
+    </LinearLayout>
+
+</LinearLayout>
