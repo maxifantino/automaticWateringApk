@@ -1,6 +1,13 @@
 <resources>
-    <string name="app_name">AutoWaterApp</string>
+    <string name="app_name">Green Garden</string>
     <string name="title_activity_landing">My Garden</string>
     <string name="create_account_btn">Crear Cuenta</string>
-    <string name="signup_message">Ya tenes una cuenta? Entrá</string>
+    <string name="signin_message">Ya tenes una cuenta? Entrá</string>
+    <string name="prompt_email">email</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="prompt_username">usuario</string>
+    <string name="action_sign_in_short">Inicia Sesión</string>
+    <string name="logintext">Entrar</string>
+    <string name="signup_message">No tienes una cuenta? Crea una nueva.</string>
+    <string name="language">Idioma</string>
 </resources>

@@ -14,7 +14,6 @@ public class User implements Serializable{
 
 	private String email;
 	private String name;
-	private String surname;
 	private AvailableLanguages language;
 
 	private List<Garden> gardens;
@@ -49,12 +48,6 @@ public class User implements Serializable{
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getSurname() {
-		return surname;
-	}
-	public void setSurname(String surname) {
-		this.surname = surname;
-	}
 	public AvailableLanguages getLanguage() {
 		return language;
 	}
@@ -78,7 +71,6 @@ public class User implements Serializable{
 		builder.append("password:").append(password).append(",");
 		builder.append("email:").append(email).append(",");
 		builder.append("name").append(name).append(",");
-		builder.append("surname:").append(surname).append(",");
 		builder.append("language:").append(language).append(",");
 
 		return builder.toString();

@@ -29,11 +29,26 @@
                 android:layout_height="wrap_content">
 
                 <AutoCompleteTextView
-                    android:id="@+id/username"
+                    android:id="@+id/email"
                     style="@style/loginTextFieldsStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/prompt_email"
+                    android:inputType="text"
+                    android:maxLines="1" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/username"
+                    style="@style/loginTextFieldsStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_username"
                     android:inputType="text"
                     android:maxLines="1" />
 
@@ -64,19 +79,28 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:textSize="20sp"
-                android:textColor="@color/titleFontColor"
-                android:background="@drawable/gradient_button"
+                android:textColor="@color/darkWhite"
+                android:background="@drawable/create_account_background"
                 android:text="@string/logintext"
                 android:textStyle="bold" />
 
         </LinearLayout>
-        <TextView
+
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:id="@+id/loginLinkText2"
-            style="@style/loginSignUpStyle"
-            android:text="@string/signup_message"/>
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/language"
+                android:layout_height="wrap_content"/>
+            <Spinner
+                android:id="@+id/languageSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+        </LinearLayout>
 
     </LinearLayout>
 </LinearLayout>
