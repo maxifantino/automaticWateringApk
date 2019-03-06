@@ -8,6 +8,8 @@
     <string name="prompt_username">usuario</string>
     <string name="action_sign_in_short">Inicia Sesión</string>
     <string name="logintext">Entrar</string>
+    <string name="createAccountText">Registrar</string>
+    <string name="languageSpinnerPrompt">Elige Idioma</string>
     <string name="signup_message">No tienes una cuenta? Crea una nueva.</string>
     <string name="language">Idioma</string>
 </resources>

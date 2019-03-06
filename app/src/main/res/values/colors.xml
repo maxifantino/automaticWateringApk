@@ -5,4 +5,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name="createAcountColor">#FDF4E3</color>
     <color name="darkWhite">#F8F8FF</color>
+    <color name="black">#030409</color>
+    <color name="grayBackground">#F8F8F8</color>
 </resources>

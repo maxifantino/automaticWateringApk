@@ -7,8 +7,10 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.PopupWindow;
 import android.widget.TextView;
@@ -29,6 +31,7 @@ public class LandingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ctx = this.getApplicationContext();
         userDao = new UserDao();
         checkLogin();
         setContentView(R.layout.activity_landing);
@@ -52,9 +55,8 @@ public class LandingActivity extends AppCompatActivity {
          View.OnClickListener listener = new View.OnClickListener() {
              @Override
              public void onClick(View v) {
-                 LayoutInflater inflater = (LayoutInflater) ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                 PopupWindow pop = new PopupWindow(inflater.inflate(R.layout.login_popup_layout, null, false), 300, 300, true);
-                 pop.getContentView();
+                 Intent newIntent = new Intent(ctx, LoginActivity.class);
+                 startActivity(newIntent);
              }
          };
          return listener;
@@ -64,9 +66,8 @@ public class LandingActivity extends AppCompatActivity {
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LayoutInflater inflater = (LayoutInflater) ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                PopupWindow pop = new PopupWindow(inflater.inflate(R.layout.create_account_layout, null, false), 300, 300, true);
-                pop.getContentView();
+                Intent newIntent = new Intent(ctx, CreateAccountActivity.class);
+                startActivity(newIntent);
             }
         };
         return listener;

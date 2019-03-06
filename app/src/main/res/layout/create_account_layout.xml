@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/landing_background"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:orientation="vertical"
+        <RelativeLayout
+        android:layout_width="match_parent"
         android:id="@+id/login_form"
+        android:layout_centerVertical="true"
+        android:background="@color/grayBackground"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_height="wrap_content">
         <!-- Login progress -->
         <ProgressBar
@@ -17,20 +22,25 @@
             android:layout_marginBottom="8dp"
             android:visibility="gone" />
 
-
         <LinearLayout
             android:id="@+id/email_login_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_horizontal|center_vertical"
             android:orientation="vertical">
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
                 android:layout_height="wrap_content">
 
                 <AutoCompleteTextView
                     android:id="@+id/email"
-                    style="@style/loginTextFieldsStyle"
+                    style="@style/loginFormTextFieldsStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/prompt_email"
@@ -41,11 +51,12 @@
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
                 android:layout_height="wrap_content">
 
                 <AutoCompleteTextView
                     android:id="@+id/username"
-                    style="@style/loginTextFieldsStyle"
+                    style="@style/loginFormTextFieldsStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/prompt_username"
@@ -56,11 +67,12 @@
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
                 android:layout_height="wrap_content">
 
                 <EditText
                     android:id="@+id/password"
-                    style="@style/loginTextFieldsStyle"
+                    style="@style/loginFormTextFieldsStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/prompt_password"
@@ -73,34 +85,34 @@
 
             </android.support.design.widget.TextInputLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/languageSpinner"
+                    style="@android:style/Widget.Spinner"
+                    android:layout_width="match_parent"
+                    android:spinnerMode="dialog"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+            </LinearLayout>
+
             <Button
                 android:id="@+id/email_sign_in_button"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:textSize="20sp"
+                android:layout_marginBottom="40dp"
+                android:textSize="18sp"
                 android:textColor="@color/darkWhite"
                 android:background="@drawable/create_account_background"
-                android:text="@string/logintext"
+                android:text="@string/createAccountText"
                 android:textStyle="bold" />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:orientation="horizontal"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:text="@string/language"
-                android:layout_height="wrap_content"/>
-            <Spinner
-                android:id="@+id/languageSpinner"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-            </Spinner>
-        </LinearLayout>
-
-    </LinearLayout>
-</LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
