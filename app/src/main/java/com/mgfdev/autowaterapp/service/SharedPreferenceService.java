@@ -11,19 +11,19 @@ import android.preference.PreferenceManager;
 public class SharedPreferenceService {
     static final String PREF_USER_NAME= "username";
 
-    static SharedPreferences getSharedPreferences(Context ctx) {
+    private static SharedPreferences getInstance(Context ctx) {
         return PreferenceManager.getDefaultSharedPreferences(ctx);
     }
 
-    public static void setUserName(Context ctx, String userName)
+    public static void setUsername(Context ctx, String userName)
     {
-        SharedPreferences.Editor editor = getSharedPreferences(ctx).edit();
+        SharedPreferences.Editor editor = getInstance(ctx).edit();
         editor.putString(PREF_USER_NAME, userName);
         editor.commit();
     }
 
     public static String getUserName(Context ctx)
     {
-        return getSharedPreferences(ctx).getString(PREF_USER_NAME, "");
+        return getInstance(ctx).getString(PREF_USER_NAME, "");
     }
 }

@@ -40,7 +40,11 @@ public class LandingActivity extends AppCompatActivity {
 
     private void checkLogin(){
         if (StringUtils.isNotEmpty(SharedPreferenceService.getUserName(this))) {
+            // call HOME activity.
+        }
+        else{
             // call login activity.
+
         }
     }
 

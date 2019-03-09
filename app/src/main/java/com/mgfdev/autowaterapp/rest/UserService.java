@@ -24,4 +24,5 @@ public class UserService {
     public void registerNewUser(User user) throws Exception{
 
     }
+
 }
