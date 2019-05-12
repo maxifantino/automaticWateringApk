@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_home"
+        android:enabled="true"
+        android:icon="@drawable/home_color_icon"
+        android:title="@string/menuHome" />
+
+    <item
+        android:id="@+id/navigation_brewers"
+        android:enabled="true"
+        android:icon="@drawable/statistics_color_small"
+        android:title="@string/menuReporting" />
+
+    <item
+        android:enabled="true"
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/setup_icon_512_color"
+        android:title="@string/menuSettings" />
+
+</menu>

@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">Green Garden</string>
-    <string name="title_activity_landing">My Garden</string>
+    <string name="app_name">Grama</string>
+    <string name="title_activity_landing">Grama</string>
     <string name="create_account_btn">Crear Cuenta</string>
+    <string name="login_account_btn">Entrar</string>
+
     <string name="signin_message">Ya tenes una cuenta? Entrá</string>
     <string name="prompt_email">email</string>
     <string name="prompt_password">Contraseña</string>
@@ -12,4 +14,16 @@
     <string name="languageSpinnerPrompt">Elige Idioma</string>
     <string name="signup_message">No tienes una cuenta? Crea una nueva.</string>
     <string name="language">Idioma</string>
+    <string name="gramaCreateAccountLegend">Registrate con tu email para poder configurar el regador automático.</string>
+    <string name="gramaLoginAccountLegend">Ingresa con tu usuario y contraseña para configurar el regador automático.</string>
+    <string name="loginError"></string>
+    <string name="menuHome">Home</string>
+    <string name="menuReporting">Reportes</string>
+    <string name="menuSettings">Config</string>
+    <string name="createUserValidationFailed">Debe completar los campos: user, email, password e idioma</string>
+    <string name="activateButonLabel">Regar</string>
+    <string name="deactivateButonLabel">Finalizar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

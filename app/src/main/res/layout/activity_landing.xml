@@ -9,7 +9,7 @@
     android:orientation="vertical"
     android:background="@drawable/landing_background"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.mgfdev.autowaterapp.activity.LandingActivity"
+    tools:context="com.mgfdev.grama.activity.LandingActivity"
     tools:showIn="@layout/activity_landing">
     <ImageView
         android:layout_width="wrap_content"
@@ -33,14 +33,14 @@
             android:gravity="center_horizontal|center_vertical"
             android:textColor="@color/createAcountColor"
             android:background="@drawable/create_account_background"
-            android:text="@string/create_account_btn"
+            android:text="@string/login_account_btn"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:id="@+id/loginLinkTest"
+            android:id="@+id/loginLinkText"
             style="@style/loginSignUpStyle"
             android:clickable="true"
             android:text="@string/signup_message"/>

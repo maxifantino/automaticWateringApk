@@ -7,4 +7,6 @@
     <color name="darkWhite">#F8F8FF</color>
     <color name="black">#030409</color>
     <color name="grayBackground">#F8F8F8</color>
+    <color name="grayMenuBackground">#EAEAEA</color>
+
 </resources>

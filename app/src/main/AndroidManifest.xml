@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mgfdev.autowaterapp">
+    package="com.mgfdev.grama">
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/pasto"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.HomeActivity">
+        <activity android:name="com.mgfdev.grama.activity.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.LandingActivity"
+            android:name="com.mgfdev.grama.activity.LandingActivity"
             android:label="@string/title_activity_landing"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -24,12 +24,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.CreateAccountActivity"
+            android:name="com.mgfdev.grama.activity.CreateAccountActivity"
             android:label="@string/title_activity_landing"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name=".activity.LoginActivity"
+            android:name="com.mgfdev.grama.activity.LoginActivity"
             android:label="@string/title_activity_landing"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>

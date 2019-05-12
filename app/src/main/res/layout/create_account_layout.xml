@@ -10,6 +10,7 @@
         android:id="@+id/login_form"
         android:background="@color/grayBackground"
         android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="15dp"
         android:layout_height="wrap_content">
         <!-- Login progress -->
@@ -32,6 +33,16 @@
             android:gravity="center_horizontal|center_vertical"
             android:orientation="vertical">
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pasto_create"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtCreateAccountBanner"
+                android:gravity="center_horizontal"
+                android:text="@string/gramaCreateAccountLegend"/>
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_marginBottom="10dp"

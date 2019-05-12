@@ -1,55 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mgfdev.autowaterapp.activity.HomeActivity">
+    android:orientation="vertical">
+<!--
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
 
+        <fragment android:name="com.mgfdev.elcaminodelacerveza.activities.MapsActivity"
+            android:id="@+id/mapsLayout"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <fragment android:name="com.mgfdev.elcaminodelacerveza.activities.BrewerFragment"
+            android:id="@+id/brewersLayout"
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <fragment android:name="com.mgfdev.elcaminodelacerveza.activities.SettingsFragment"
+            android:id="@+id/settingsLayout"
+            android:layout_weight="4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+    </FrameLayout>
+-->
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/homeBanner">
+        <FrameLayout
+            android:id="@+id/content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:id="@+id/gardenNameText"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <ImageView
+            <fragment android:name="com.mgfdev.grama.activity.HomeFragment"
+                android:id="@+id/homeLayout"
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/gps_icon_30"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:id="@+id/locationText"
                 android:layout_height="wrap_content" />
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <ImageView
+            <fragment android:name="com.mgfdev.grama.activity.StatisticFragment"
+                android:id="@+id/statisticsLayout"
+                android:layout_weight="3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/temp_30"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:id="@+id/temperatureText"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
+                android:layout_height="match_parent" />
 
+            <fragment android:name="com.mgfdev.grama.activity.ConfigurationFragment"
+                android:id="@+id/settingsLayout"
+                android:layout_weight="4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigationMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grayMenuBackground"
+            app:itemTextColor="@color/black"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            app:menu="@menu/navigation" />
 
     </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
